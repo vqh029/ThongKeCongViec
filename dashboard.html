@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cong viec DAWACO</title>
+    <link rel="stylesheet" href="./asset/css/dashboard.css">
+    <script src="https://kit.fontawesome.com/917e769a74.js" crossorigin="anonymous"></script>   
+</head>
+<body>
+    <div id="body-container">
+        <div class="body-box">
+            <div class="body-inner">
+                <div class="box-heading">
+                    <div class="heading-inner">
+                        <h2>TRA CỨU CÔNG VIỆC</h2>
+                    </div>
+                </div>
+
+                <div class="box-greeting">
+                    <div class="greeting-inner">
+                        <h3>Chào <span id="hi-username" class="greeting-name">Quang</span>, mời bạn điền thông tin dưới đây.</h3>
+                    </div>
+                    
+                </div>
+
+                <div class="box-fullfill">
+                    <div class="fullfill-inner">
+                        <h4>Thông tin công việc</h4>
+                        
+                        <div class="content-input">
+                            <form action="" id="form-add-job">
+                                <div class="input-col">
+                                    <div class="input-detail">
+                                        <label class="label-input" for="dia-diem">Nơi hỗ trợ</label><br>
+                                        <select class="box-input" name="noi-ho-tro" id="dia-diem">
+                                            <option value="cty">Tổng công ty</option>
+                                            <option value="lc">XNCN Liên Chiểu</option>
+                                            <option value="tk">XNCN Thanh Khê</option>
+                                            <option value="hc">XNCN Hải Châu</option>
+                                            <option value="st">XNCN Sơn Trà</option>
+                                            <option value="nhs">XNCN Ngũ Hành Sơn</option>
+                                            <option value="cl">XNCN Cẩm Lệ</option>
+                                            <option value="nmncd">Nhà máy nước Cầu Đỏ</option>
+                                            <option value="nmnsb">Nhà máy nước Sân Bay</option>
+                                            <option value="nmnhht">Nhà máy nước Hồ Hòa Trung</option>
+                                        </select>
+                                        <br>
+                                    </div>
+
+                                    <div class="input-detail">
+                                        <label class="label-input" for="ngay-ho-tro">Ngày hỗ trợ</label><br>
+                                        <input class="box-input" type="date" id="ngay-ho-tro"><br>
+                                    </div>
+                                </div>
+
+                                <div class="input-col">
+                                    <div class="input-detail">
+                                        <label class="label-input" for="thoi-gian">Thời gian hỗ trợ</label><br>
+                                        <select class="box-input" name="thoi-gian-ho-tro" id="thoi-gian">
+                                            <option value="all">Cả ngày</option>
+                                            <option value="sang">Buổi sáng</option>
+                                            <option value="trua">Buổi trưa</option>
+                                            <option value="chieu">Buổi chiều</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="input-detail">
+                                        <label class="label-input" for="chi-tiet-cv">Mô tả công việc</label><br>
+                                        <textarea class="box-input text-detail-job" type="text" id="chi-tiet-cv" cols="30" rows="10" maxlength="350" name="detail-job">
+                                        </textarea><br>
+                                    </div>
+
+                                    <div class="box-submit-job">
+                                        <input type="submit" value="Ghi nhận" id="btn-submit-job">
+                                    </div>
+
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-search">
+                    <div class="search-inner">
+                        <div class="search-title">
+                            <h4>Tìm kiếm thông tin</h4>
+                        </div>
+                        <div class="search-content">
+                            <form action="" id="form-search-job">
+                                <div class="day-month-year">
+                                    <div class="date-input">
+                                        <label for="day">Ngày:</label>
+                                        <select name="day" id="day"></select>
+                                    </div>
+
+                                    <div class="date-input">
+                                        <label for="month">Tháng:</label>
+                                        <select name="month" id="month"></select>
+                                    </div>
+
+                                    <div class="date-input">
+                                        <label for="year">Năm:</label>
+                                        <select name="year" id="year"></select>
+                                    </div>
+
+                                    <div class="box-submit-date">
+                                        <input type="submit" value="Tìm" id="btn-submit-date">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="search-list">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./asset/js/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cong viec DAWACO</title>
+    <link rel="stylesheet" href="./asset/css/login.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/core.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js"></script>
+    <script src="https://kit.fontawesome.com/917e769a74.js" crossorigin="anonymous"></script>   
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="custom-menu">
+                <div class="web-description">
+                    <a href="https://dawaco.com.vn">
+                        <img id="web-brand-logo" src="./asset/img/logodawaco_70px.png" alt="brand DAWACO">
+                    </a>
+                    <div class="web-name">
+                        <h1 class="web-title"><a href="#">Thống kê công việc</a></h1>
+                        <h2 class="web-brand-name">Công ty Cổ phần Cấp nước Đà Nẵng</h2>
+                    </div>
+                </div>
+
+                <div class="navbar-menu">
+                    <ul class="main-menu">
+                        <li class="menu-item">
+                            <span class="menu-item-name"><a href="./login.html"><i class="fa-solid fa-house"></i></a></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>   
+    </nav>
+    
+    <div id="bodycontent">
+        <div class="body-container">
+            <div class="box-banner-head">
+                <div class="banner-head-detail">
+                    <img src="./asset/img/analysist.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="content-title">
+                <div class="content-title-heading">
+                    <h3>TRA CỨU CÔNG VIỆC</h3>
+                </div>   
+            </div>
+
+            <div class="line-item"></div>
+            <div class="box-login">
+                <div class="box-login-detail">
+                    <form>
+                        <div class="box-detail">
+                            <label class="label-input required" for="Username">Tên đăng nhập</label><br>
+                            <input class="box-input" type="text" id="Username" name="Username" placeholder="Nhập username" 
+                            pattern="^[a-zA-Z0-9]*$" required><br>
+                        </div>
+
+                        <div class="box-detail">
+                            <label class="label-input required" for="Password">Mật khẩu</label><br>
+                            <input class="box-input" type="password" id="Password" placeholder="Nhập mật khẩu" 
+                            name="Password"  required pattern="^[a-zA-Z0-9#@]*$" title="Không được chứa các ký tự đặc biệt, ngoại trừ #, @">
+                            <i class="fa-solid fa-eye" id="toggle-password"></i>
+                        </div>
+
+                        <div class="box-detail ">
+                            <div class="box-option">
+                                <span><input class="check-saveInfo-input" type="checkbox">Ghi nhớ đăng nhập</span>
+                                <span><a class="link-forget-password" href="#">Quên mật khẩu</a></span>
+                            </div>
+                        </div>
+
+                        <div class="box-detail">
+                            <button class="box-submit">Đăng nhập</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container-1">
+            <div class="footer-detail">
+                <p>Công ty Cổ phần Cấp nước Đà Nẵng (DAWACO)</p>
+                <div class="footer-list">
+                    <ul class="list-detail col-1">
+                        <li>
+                            <i class="fa-solid fa-map"></i>
+                            <span>57 Xô Viết Nghệ Tĩnh, P. Hòa Cường Nam, Q. Hải Châu, TP. Đà Nẵng</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Điện thoại: 0236.369.6632</span> 
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-fax"></i>
+                            <span>Fax: 0236.369.7222</span>
+                        </li>
+                    </ul>
+
+                    <ul class="list-detail col-2">
+                        <li>
+                            <i class="fa-solid fa-envelope"></i> Email: 
+                            <a href="mailto:hddt@dawaco.com.vn">hddt@dawaco.com.vn</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-desktop"></i> Website:
+                            <a href="https://dawaco.com.vn">dawaco.com.vn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-container-2">
+            <p class="copyright">© 2022 DAWACO - All Rights Reserved - Design by TT CNTT</p>
+        </div>
+    </footer>
+
+    <script src="./asset/js/login.js"></script>
+</body>
+</html>

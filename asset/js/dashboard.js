@@ -68,9 +68,11 @@ function populateDays(month){
 function populateYears(){
     //Get the current year as a number
     let year = new Date().getFullYear();
-    const option = document.createElement("option");
-        option.textContent = year;
+    for(let i = 0; i < 11; i++){
+        const option = document.createElement("option");
+        option.textContent = year - i;
         yearSelect.appendChild(option);
+    }
 }
 
 populateDays(monthSelect.value);

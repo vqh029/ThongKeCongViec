@@ -563,6 +563,10 @@ footer>.footer-container-2 .copyright{
         width: 100%;
     }
 
+    .input-detail .box-input{
+        min-width: 100%;
+    }
+
 }
 
 /* Tablet: 600px - 1024px */

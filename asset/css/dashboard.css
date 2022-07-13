@@ -563,8 +563,8 @@ footer>.footer-container-2 .copyright{
         width: 100%;
     }
 
-    .input-detail .box-input{
-        min-width: 100%;
+    .input-detail>input{
+        min-width: 96%;
     }
 
 }

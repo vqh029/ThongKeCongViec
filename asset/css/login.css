@@ -313,7 +313,7 @@ footer>.footer-container-1{
     margin-right: auto;
     margin-bottom: 8px;
     user-select: none;
-
+    padding: 0 8px;
 }
 
 .footer-detail{

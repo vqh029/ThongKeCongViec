@@ -308,27 +308,14 @@ body #body-container{
     color: var(--light-red);
 }
 
-.box-fullfill{
-    padding: 16px;
-    margin-bottom: 32px;
-}
+/* <----------------------------BOX-SEARCH-DATE---------------------------->*/
 
-#form-add-job{
-    display: flex;
-    justify-content: space-between;
-}
-
-.content-input .input-col{
-    width: 47%;
-    margin-top: 16px;
-}
-
-.input-detail .label-input{
+.date-input label{
     font-weight: 500;
     font-size: 16px;
 }
 
-.input-detail .box-input{
+.date-input select{
     height: 40px;
     width: 100%;
     padding: 8px 16px;
@@ -339,28 +326,13 @@ body #body-container{
     cursor: pointer;
 }
 
-.input-detail .box-input:focus{
+.date-input select:focus{
     border-color: rgb(78 151 224 / 50%);
     outline: 0;
     box-shadow: 0 0 0 2px rgb(78 151 224 / 50%);
 }
 
-.text-detail-job{
-    min-width: 100%;
-    max-width: 100%;
-    min-height: 121px;
-    max-height: 121px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-}
-
-.input-col .box-submit-job{
-    display: flex;
-    justify-content: end;
-}
-
-.input-col #btn-submit-job{
+.box-submit-date #btn-submit-date{
     height: 40px;
     width: 160px;
     background-color: var(--primary-blue);
@@ -372,8 +344,30 @@ body #body-container{
     cursor: pointer;
 }
 
-.input-col #btn-submit-job:hover{
+.box-submit-date #btn-submit-date:hover{
     box-shadow: 0 8px 25px -8px rgb(78 151 255);
+}
+
+.box-search{
+    padding: 16px;
+}
+
+.search-content #form-search-job{
+    margin-top: 16px;
+}
+
+.search-content .day-month-year{
+    display: flex;
+}
+
+.day-month-year .date-input{
+    margin-right: 10px;
+    max-width: 150px;
+}
+
+.box-submit-date{
+    display: flex;
+    align-items: center;
 }
 
 /* <----------------------------CSS for FOOTER---------------------------->*/
@@ -482,6 +476,11 @@ footer>.footer-container-2 .copyright{
 
 /* Mobile: max: 280px */
 @media only screen and (max-width: 17.5em){
+    body{
+        background-color: var(--light-white);
+        background-image: none;
+    }
+
     .navbar{
         height: 70px;
     }
@@ -501,16 +500,13 @@ footer>.footer-container-2 .copyright{
         height: auto;
     }
 
-    .content-input #form-add-job{
+    .search-content .day-month-year{
         display: flex;
         flex-direction: column;
     }
 
-    .content-input .input-col{
-        width: 100%;
-    }
-
-    .input-col #btn-submit-job{
+    .day-month-year .date-input, .box-submit-date, .box-submit-date #btn-submit-date {
+        max-width: 100%;
         width: 100%;
     }
 
@@ -550,19 +546,15 @@ footer>.footer-container-2 .copyright{
         display: none;
     }
 
-    .content-input #form-add-job{
+    .search-content .day-month-year{
         display: flex;
         flex-direction: column;
     }
 
-    .content-input .input-col{
+    .day-month-year .date-input, .box-submit-date, .box-submit-date #btn-submit-date {
+        max-width: 100%;
         width: 100%;
     }
-
-    .input-col #btn-submit-job{
-        width: 100%;
-    }
-
 }
 
 /* Tablet: 600px - 1024px */
@@ -574,7 +566,7 @@ footer>.footer-container-2 .copyright{
     .web-description .web-name{
         display: block;
     }
-
+    
     .navbar .nav-container .custom-menu{
         width: 98%;
         margin-left: auto;

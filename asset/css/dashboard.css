@@ -565,6 +565,7 @@ footer>.footer-container-2 .copyright{
 
     .input-detail>input{
         min-width: 96%;
+        max-width: 96%;
     }
 
 }

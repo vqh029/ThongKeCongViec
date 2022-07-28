@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cong viec DAWACO</title>
-    <link rel="stylesheet" href="./asset/css/dashboard.css">
+    <link rel="stylesheet" href="./asset/css/login.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/core.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js"></script>
     <script src="https://kit.fontawesome.com/917e769a74.js" crossorigin="anonymous"></script>   
 </head>
 <body>
@@ -23,138 +25,62 @@
                 </div>
 
                 <div class="navbar-menu">
-                    <label for="navbar-right" class="open-nav-mobile">
-                        <i class="fa-solid fa-bars"></i>
-                    </label>
-                    <input type="checkbox" hidden id="navbar-right">
-                    <label class="overlay" for="navbar-right"></label>
-                    <div class="nav-mobile">
-                        <div class="nav-mobile-container">
-                            <label for="navbar-right">
-                                <i class="fa-solid fa-outdent navbar-right-close"></i>
-                            </label>
-                            <div class="menu-mobile-user">
-                                <i class="fa-solid fa-circle-user"></i>
-                                <span id="hi-mobile-username" class="greeting-name">Quang</span>
-                            </div>
-                            <hr>
-                            <div class="nav-mobile-menu">
-                                <ul class="menu-mobile-content">
-                                    <li class="menu-mobile-item">
-                                        <i class="fa-solid fa-key"></i>
-                                        <span class="menu-item-name">Đổi mật khẩu</span>    
-                                    </li>
-                                    <li class="menu-mobile-item">
-                                        <i class="fa-solid fa-briefcase"></i>
-                                        <span class="menu-item-name">Thông tin công việc</span>
-                                    </li>
-                                    <li class="menu-mobile-item">
-                                        <i class="fa-solid fa-magnifying-glass"></i>
-                                        <span class="menu-item-name">Tra cứu</span>
-                                    </li>
-                                    <li class="menu-mobile-item">
-                                        <i class="fa-solid fa-right-from-bracket"></i>
-                                        <span class="menu-item-name">Đăng xuất</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    <ul class="main-menu">
+                        <li class="menu-item">
+                            <span class="menu-item-name"><a href="./login.html"><i class="fa-solid fa-house"></i></a></span>
+                        </li>
+                    </ul>
                 </div>
- 
             </div>
         </div>
-        
+        <div class="clearfix"></div>   
     </nav>
-
-    <div id="body-container">
-        <div class="body-box">
-            <div class="body-inner">
-                <div class="box-heading">
-                    <div class="heading-inner">
-                        <h2>CẬP NHẬT CÔNG VIỆC</h2>
-                    </div>
+    
+    <div id="bodycontent">
+        <div class="body-container">
+            <div class="box-banner-head">
+                <div class="banner-head-detail">
+                    <img src="./asset/img/analysist.jpg" alt="">
                 </div>
-
-                <div class="box-greeting">
-                    <div class="greeting-inner">
-                        <h3>Chào <span id="hi-username" class="greeting-name">Quang</span>, mời bạn điền thông tin dưới đây.</h3>
-                    </div>
-                    
-                </div>
-
-                <div class="box-fullfill">
-                    <div class="fullfill-inner">
-                        <h4>Thông tin công việc</h4>
-                        
-                        <div class="content-input">
-                            <form action="" id="form-add-job">
-                                <div class="input-col">
-                                    <div class="input-detail">
-                                        <label class="label-input" for="dia-diem">Nơi hỗ trợ</label><br>
-                                        <select class="box-input" name="noi-ho-tro" id="dia-diem">
-                                            <option value="cty">Tổng công ty</option>
-                                            <option value="lc">XNCN Liên Chiểu</option>
-                                            <option value="tk">XNCN Thanh Khê</option>
-                                            <option value="hc">XNCN Hải Châu</option>
-                                            <option value="st">XNCN Sơn Trà</option>
-                                            <option value="nhs">XNCN Ngũ Hành Sơn</option>
-                                            <option value="cl">XNCN Cẩm Lệ</option>
-                                            <option value="nmncd">Nhà máy nước Cầu Đỏ</option>
-                                            <option value="nmnsb">Nhà máy nước Sân Bay</option>
-                                            <option value="nmnhht">Nhà máy nước Hồ Hòa Trung</option>
-                                        </select>
-                                        <br>
-                                    </div>
-
-                                    <div class="input-detail">
-                                        <label class="label-input" for="ngay-ho-tro">Ngày hỗ trợ</label><br>
-                                        <input class="box-input" type="date" id="ngay-ho-tro"><br>
-                                    </div>
-
-                                    <div class="input-detail">
-                                        <label class="label-input" for="thoi-gian">Thời gian hỗ trợ</label><br>
-                                        <select class="box-input" name="thoi-gian-ho-tro" id="thoi-gian">
-                                            <option value="all">Cả ngày</option>
-                                            <option value="sang">Buổi sáng</option>
-                                            <option value="trua">Buổi trưa</option>
-                                            <option value="chieu">Buổi chiều</option>
-                                        </select>
-                                        <br>
-                                    </div>
-                                </div>
-
-                                <div class="input-col">
-                                    <div class="input-detail">
-                                        <label class="label-input" for="loai-cong-viec">Loại công việc</label><br>
-                                        <select class="box-input" name="loai-cv" id="loai-cong-viec">
-                                            <option value="type-sua-may-tinh">Sửa máy tính</option>
-                                            <option value="type-sua-mang">Sửa mạng</option>
-                                            <option value="type-ho-tro-bd">Hỗ trợ biên đọc</option>
-                                            <option value="type-doi-tac">Phối hợp đối tác</option>
-                                            <option value="type-doi-tac">Trường hợp khác</option>
-                                        </select>
-                                    </div>
-
-                                    <div class="input-detail">
-                                        <label class="label-input" for="chi-tiet-cv">Mô tả công việc</label><br>
-                                        <textarea class="box-input text-detail-job" type="text" id="chi-tiet-cv" cols="30" rows="10" maxlength="350" name="detail-job">
-                                        </textarea><br>
-                                    </div>
-
-                                    <div class="box-submit-job">
-                                        <input type="submit" value="Ghi nhận" id="btn-submit-job">
-                                    </div>
-
-                                </div>
-
-                            </form>
-                        </div>
-                    </div>
-                </div>
-
             </div>
-        </div>  
+
+            <div class="content-title">
+                <div class="content-title-heading">
+                    <h3>TRA CỨU CÔNG VIỆC</h3>
+                </div>   
+            </div>
+
+            <div class="line-item"></div>
+            <div class="box-login">
+                <div class="box-login-detail">
+                    <form>
+                        <div class="box-detail">
+                            <label class="label-input required" for="Username">Tên đăng nhập</label><br>
+                            <input class="box-input" type="text" id="Username" name="Username" placeholder="Nhập username" 
+                            pattern="^[a-zA-Z0-9]*$" required><br>
+                        </div>
+
+                        <div class="box-detail">
+                            <label class="label-input required" for="Password">Mật khẩu</label><br>
+                            <input class="box-input" type="password" id="Password" placeholder="Nhập mật khẩu" 
+                            name="Password"  required pattern="^[a-zA-Z0-9#@]*$" title="Không được chứa các ký tự đặc biệt, ngoại trừ #, @">
+                            <i class="fa-solid fa-eye" id="toggle-password"></i>
+                        </div>
+
+                        <div class="box-detail ">
+                            <div class="box-option">
+                                <span><input class="check-saveInfo-input" type="checkbox">Ghi nhớ đăng nhập</span>
+                                <span><a class="link-forget-password" href="#">Quên mật khẩu</a></span>
+                            </div>
+                        </div>
+
+                        <div class="box-detail">
+                            <button class="box-submit">Đăng nhập</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer>
@@ -196,5 +122,6 @@
         </div>
     </footer>
 
+    <script src="./asset/js/login.js"></script>
 </body>
 </html>

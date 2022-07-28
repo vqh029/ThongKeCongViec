@@ -375,3 +375,138 @@ footer>.footer-container-2 .copyright{
       opacity: 1;
     }
 }
+
+/* <----------------------------RESPONSIVE---------------------------->*/
+/* Mobile and Tablet: max-width: 1024px(1023)  */
+@media only screen and (max-width: 63.9375em){
+    body #body-container{
+        border-radius: 0px;
+        height: fit-content;
+    }
+
+    .navbar .nav-container .custom-menu{
+        width: 95%!important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .web-description .web-name{
+        display: none;
+    }
+
+    .banner-head-detail{
+        max-width: 63.9375em!important;
+    }
+
+    footer{
+        display: none;
+    }
+}
+
+/* Mobile: max: 280px */
+@media only screen and (max-width: 17.5em){
+    .navbar{
+        height: 70px!important;
+    }
+
+    .web-description{
+        padding: 2px!important;
+    }
+
+    .web-description>a>img{
+        max-width:60px;
+        max-height:66px;
+        width: auto;
+        height: auto;
+    }
+
+    .nav-container .main-menu{
+        height: 92%!important;
+    }
+
+    .banner-head-detail{
+        display: none;
+    }
+
+    .content-title-heading h3{
+        font-size: 22px!important;
+    }
+
+    .box-detail .box-option{
+        flex-direction: column;
+    }
+
+    .box-detail .box-option span{
+        margin-bottom: 8px;
+    }
+
+}
+
+/* Mobile: 320px - 414px | max: 420px */
+@media only screen and (min-width: 20em) and (max-width: 26.25em){
+
+    .navbar{
+        height: 70px!important;
+    }
+
+    .navbar .nav-container {
+        max-width: 26.25em;
+    }
+
+    .nav-container .main-menu{
+        height: 92%!important;
+    }
+
+    .web-description{
+        padding: 2px!important;
+    }
+
+    .web-description>a>img{
+        max-width:60px;
+        max-height:66px;
+        width: auto;
+        height: auto;
+    }
+
+    .web-description .web-name{
+        display: none;
+    }
+
+    .banner-head-detail{
+        max-width: 100%;
+    }
+
+    .banner-head-detail img{
+        max-width: 100%!important;
+    }
+}
+
+/* Tablet: 600px - 1024px */
+@media only screen and (min-width: 37.5em) and (max-width: 63.9375em){
+    .navbar .nav-container {
+        max-width: 63.9375em;
+    }
+
+    .web-description .web-name{
+        display: block;
+    }
+
+    .navbar .nav-container .custom-menu{
+        width: 98%!important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    body #body-container{
+        height: 100%;
+    }
+
+    .banner-head-detail{
+        max-width: 100%;
+    }
+
+    .banner-head-detail img{
+        max-width: 100%!important;
+    }
+
+}

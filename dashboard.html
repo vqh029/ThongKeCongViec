@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cong viec DAWACO</title>
+    <link rel="stylesheet" href="./asset/css/dashboard.css">
+    <script src="https://kit.fontawesome.com/917e769a74.js" crossorigin="anonymous"></script>   
+</head>
+<body>
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="custom-menu">
+                <div class="web-description">
+                    <a href="https://dawaco.com.vn">
+                        <img id="web-brand-logo" src="./asset/img/logodawaco_70px.png" alt="brand DAWACO">
+                    </a>
+                    <div class="web-name">
+                        <h1 class="web-title"><a href="#">Thống kê công việc</a></h1>
+                        <h2 class="web-brand-name">Công ty Cổ phần Cấp nước Đà Nẵng</h2>
+                    </div>
+                </div>
+
+                <div class="navbar-menu">
+                    <label for="navbar-right" class="open-nav-mobile">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+                    <input type="checkbox" hidden id="navbar-right">
+                    <label class="overlay" for="navbar-right"></label>
+                    <div class="nav-mobile">
+                        <div class="nav-mobile-container">
+                            <label for="navbar-right">
+                                <i class="fa-solid fa-outdent navbar-right-close"></i>
+                            </label>
+                            <div class="menu-mobile-user">
+                                <i class="fa-solid fa-circle-user"></i>
+                                <span id="hi-mobile-username" class="greeting-name">Quang</span>
+                            </div>
+                            <hr>
+                            <div class="nav-mobile-menu">
+                                <div class="menu-mobile-content">
+                                    <a href="#" class="menu-mobile-item">
+                                        <i class="fa-solid fa-key"></i>
+                                        <span class="menu-item-name">Đổi mật khẩu</span>
+                                    </a>
+
+                                    <a href="./dashboard.html" class="menu-mobile-item">
+                                        <i class="fa-solid fa-briefcase"></i>
+                                        <span class="menu-item-name">Thông tin công việc</span>
+                                    </a>
+
+                                    <a href="./tracuu.html" class="menu-mobile-item">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                        <span class="menu-item-name">Tra cứu</span>
+                                    </a>
+
+                                    <a href="./index.html" class="menu-mobile-item">
+                                        <i class="fa-solid fa-right-from-bracket"></i>
+                                        <span class="menu-item-name">Đăng xuất</span>
+                                    </a>
+                                </div>
+
+                                <!-- <ul class="menu-mobile-content">
+                                    <li class="menu-mobile-item">
+                                        <i class="fa-solid fa-key"></i>
+                                        <a class="menu-item-name" href="#">Đổi mật khẩu</a>    
+                                    </li>
+                                    <li class="menu-mobile-item">
+                                        <i class="fa-solid fa-briefcase"></i>
+                                        <a class="menu-item-name" href="./dashboard.html">Thông tin công việc</a>
+                                    </li>
+                                    <li class="menu-mobile-item">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                        <a class="menu-item-name" href="./tracuu.html">Tra cứu</a>
+                                    </li>
+                                    <li class="menu-mobile-item">
+                                        <i class="fa-solid fa-right-from-bracket"></i>
+                                        <a class="menu-item-name" href="./index.html">Đăng xuất</a>
+                                    </li>
+                                </ul> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+ 
+            </div>
+        </div>
+        
+    </nav>
+
+    <div id="body-container">
+        <div class="body-box">
+            <div class="body-inner">
+                <div class="box-heading">
+                    <div class="heading-inner">
+                        <h2>CẬP NHẬT CÔNG VIỆC</h2>
+                    </div>
+                </div>
+
+                <div class="box-greeting">
+                    <div class="greeting-inner">
+                        <h3>Chào <span id="hi-username" class="greeting-name">Quang</span>, mời bạn điền thông tin dưới đây.</h3>
+                    </div>
+                    
+                </div>
+
+                <div class="box-fullfill">
+                    <div class="fullfill-inner">
+                        <h4>Thông tin công việc</h4>
+                        
+                        <div class="content-input">
+                            <form action="" id="form-add-job">
+                                <div class="input-col">
+                                    <div class="input-detail">
+                                        <label class="label-input" for="dia-diem">Nơi hỗ trợ</label><br>
+                                        <select class="box-input" name="noi-ho-tro" id="dia-diem">
+                                            <option value="cty">Tổng công ty</option>
+                                            <option value="lc">XNCN Liên Chiểu</option>
+                                            <option value="tk">XNCN Thanh Khê</option>
+                                            <option value="hc">XNCN Hải Châu</option>
+                                            <option value="st">XNCN Sơn Trà</option>
+                                            <option value="nhs">XNCN Ngũ Hành Sơn</option>
+                                            <option value="cl">XNCN Cẩm Lệ</option>
+                                            <option value="nmncd">Nhà máy nước Cầu Đỏ</option>
+                                            <option value="nmnsb">Nhà máy nước Sân Bay</option>
+                                            <option value="nmnhht">Nhà máy nước Hồ Hòa Trung</option>
+                                        </select>
+                                        <br>
+                                    </div>
+
+                                    <div class="input-detail">
+                                        <label class="label-input" for="ngay-ho-tro">Ngày hỗ trợ</label><br>
+                                        <input class="box-input" type="date" id="ngay-ho-tro"><br>
+                                    </div>
+
+                                    <div class="input-detail">
+                                        <label class="label-input" for="thoi-gian">Thời gian hỗ trợ</label><br>
+                                        <select class="box-input" name="thoi-gian-ho-tro" id="thoi-gian">
+                                            <option value="all">Cả ngày</option>
+                                            <option value="sang">Buổi sáng</option>
+                                            <option value="trua">Buổi trưa</option>
+                                            <option value="chieu">Buổi chiều</option>
+                                        </select>
+                                        <br>
+                                    </div>
+                                </div>
+
+                                <div class="input-col">
+                                    <div class="input-detail">
+                                        <label class="label-input" for="loai-cong-viec">Loại công việc</label><br>
+                                        <select class="box-input" name="loai-cv" id="loai-cong-viec">
+                                            <option value="type-sua-may-tinh">Sửa máy tính</option>
+                                            <option value="type-sua-mang">Sửa mạng</option>
+                                            <option value="type-ho-tro-bd">Hỗ trợ biên đọc</option>
+                                            <option value="type-doi-tac">Phối hợp đối tác</option>
+                                            <option value="type-doi-tac">Trường hợp khác</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="input-detail">
+                                        <label class="label-input" for="chi-tiet-cv">Mô tả công việc</label><br>
+                                        <textarea class="box-input text-detail-job" type="text" id="chi-tiet-cv" cols="30" rows="10" maxlength="350" name="detail-job">
+                                        </textarea><br>
+                                    </div>
+
+                                    <div class="box-submit-job">
+                                        <input type="submit" value="Ghi nhận" id="btn-submit-job">
+                                    </div>
+
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>  
+    </div>
+
+    <footer>
+        <div class="footer-container-1">
+            <div class="footer-detail">
+                <p>Công ty Cổ phần Cấp nước Đà Nẵng (DAWACO)</p>
+                <div class="footer-list">
+                    <ul class="list-detail col-1">
+                        <li>
+                            <i class="fa-solid fa-map"></i>
+                            <span>57 Xô Viết Nghệ Tĩnh, P. Hòa Cường Nam, Q. Hải Châu, TP. Đà Nẵng</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Điện thoại: 0236.369.6632</span> 
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-fax"></i>
+                            <span>Fax: 0236.369.7222</span>
+                        </li>
+                    </ul>
+
+                    <ul class="list-detail col-2">
+                        <li>
+                            <i class="fa-solid fa-envelope"></i> Email: 
+                            <a href="mailto:hddt@dawaco.com.vn">hddt@dawaco.com.vn</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-desktop"></i> Website:
+                            <a href="https://dawaco.com.vn">dawaco.com.vn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-container-2">
+            <p class="copyright">© 2022 DAWACO - All Rights Reserved - Design by TT CNTT</p>
+        </div>
+    </footer>
+
+</body>
+</html>

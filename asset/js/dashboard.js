@@ -3,9 +3,9 @@ const yearSelect = document.getElementById("year");
 const monthSelect = document.getElementById("month");
 const daySelect = document.getElementById("day");
 
-const months = ['January', 'February', 'March', 'April', 
-'May', 'June', 'July', 'August', 'September', 'October',
-'November', 'December'];
+const months = ['1', '2', '3', '4', 
+'5', '6', '7', '8', '9', '10',
+'11', '12'];
 
 //Months are always the same
 (function populateMonths(){
@@ -14,7 +14,7 @@ const months = ['January', 'February', 'March', 'April',
         option.textContent = months[i];
         monthSelect.appendChild(option);
     }
-    monthSelect.value = "January";
+    monthSelect.value = "1";
 })();
 
 let previousDay;
@@ -30,12 +30,12 @@ function populateDays(month){
     //Get the current year
     let year = yearSelect.value;
 
-    if(month === 'January' || month === 'March' || 
-    month === 'May' || month === 'July' || month === 'August' 
-    || month === 'October' || month === 'December') {
+    if(month === '1' || month === '3' || 
+    month === '5' || month === '7' || month === '8' 
+    || month === '10' || month === '12') {
         dayNum = 31;
-    } else if(month === 'April' || month === 'June' 
-    || month === 'September' || month === 'November') {
+    } else if(month === '4' || month === '6' 
+    || month === '9' || month === '11') {
         dayNum = 30;
     }else{
         //Check for a leap year
@@ -68,7 +68,7 @@ function populateDays(month){
 function populateYears(){
     //Get the current year as a number
     let year = new Date().getFullYear();
-    for(let i = 0; i < 11; i++){
+    for(let i = 0; i < 4; i++){
         const option = document.createElement("option");
         option.textContent = year - i;
         yearSelect.appendChild(option);

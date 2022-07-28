@@ -29,8 +29,9 @@ body{
     width: 100vw;
     height: 100vh;
     line-height: 1.5;
-    background-color: #8BC6EC;
-    background-image: radial-gradient(circle, #8BC6EC 0%, #95b9e2 100%);
+    /* background-color: #8BC6EC;
+    background-image: radial-gradient(circle, #8BC6EC 0%, #95b9e2 100%); */
+    background-color: var(--dark-blue);
     font-family: 'Roboto', sans-serif;
     font-weight: 400;   
     font-size: 16px;
@@ -251,10 +252,18 @@ body{
 
 .nav-mobile-menu .menu-mobile-content{
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
 }
 
 .menu-mobile-content .menu-mobile-item{
     padding: 12px 16px;
+    text-decoration: none;
+    color: var(--light-black);
+}
+
+.menu-mobile-item:visited{
+    color: var(--light-black);
 }
 
 .menu-mobile-content .menu-mobile-item:hover, .menu-mobile-item:active{
@@ -275,6 +284,7 @@ body{
 .menu-mobile-item .menu-item-name{
     margin-left: 10px;
     font-weight: 500;
+    text-decoration: none;
 }
 
 /* <----------------------------BODY-CONTENT---------------------------->*/
@@ -563,10 +573,10 @@ footer>.footer-container-2 .copyright{
         width: 100%;
     }
 
-    .input-detail>input{
+    /* .input-detail>input{
         min-width: 96%;
         max-width: 96%;
-    }
+    } */
 
 }
 
